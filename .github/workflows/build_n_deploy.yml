@@ -58,4 +58,4 @@ jobs:
           git init
           git add .
           git commit -m "Deploy to GitHub Pages"
-          git push --force "https://${{ secrets.TOKEN }}@github.com/tiagors09/tiagors09.git" master:gh-pages
+          git push --force "https://${{ secrets.TOKEN }}@github.com/tiagors09/tiagors09.github.io.git" master:gh-pages
