@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tiagors09_github_io/about.dart';
+import 'package:tiagors09_github_io/skills.dart';
+import 'package:tiagors09_github_io/training_and_experience.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -11,18 +14,10 @@ class _HomeState extends State<Home> {
   int _currentIdex = 0;
 
   final screens = [
-    const Center(
-      child: Text('Home'),
-    ),
-    const Center(
-      child: Text('Sobre'),
-    ),
-    const Center(
-      child: Text('Formação e Experiência'),
-    ),
-    const Center(
-      child: Text('Habilidades'),
-    ),
+    const HomeScreen(),
+    const About(),
+    const TrainingAndExperience(),
+    const Skills(),
   ];
 
   final items = [
@@ -64,6 +59,61 @@ class _HomeState extends State<Home> {
         items: items,
         onTap: _onTap,
       ),
+    );
+  }
+}
+
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenLeft = MediaQuery.of(context).size.width;
+
+    return Stack(
+      children: [
+        Container(
+          width: double.infinity,
+          height: screenHeight * 0.5,
+          color: Colors.brown,
+        ),
+        Positioned(
+          top: (screenHeight * 0.50) - 150,
+          left: (screenLeft * 0.5) - 150,
+          child: Column(
+            children: [
+              ClipRRect(
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(360),
+                ),
+                child: Image.network(
+                  'https://avatars.githubusercontent.com/u/38366602?v=4',
+                  width: 300,
+                  height: 300,
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.all(10),
+                child: const Column(
+                  children: [
+                    Text(
+                      'Tiago Rodrigues Sousa',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 17,
+                      ),
+                    ),
+                    Text(
+                      'Junior Mobile Developer | Flutter & Dart',
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ],
     );
   }
 }
