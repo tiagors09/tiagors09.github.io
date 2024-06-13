@@ -10,8 +10,9 @@ class Portifolio extends StatelessWidget {
     return MaterialApp(
       home: const Home(),
       theme: ThemeData.from(
+        useMaterial3: true,
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.amber,
+          primarySwatch: Colors.brown,
         ),
       ),
     );
