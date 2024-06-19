@@ -12,7 +12,7 @@ class Portifolio extends StatelessWidget {
       theme: ThemeData.from(
         useMaterial3: true,
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.brown,
+          primarySwatch: Colors.amber,
         ),
       ),
     );
