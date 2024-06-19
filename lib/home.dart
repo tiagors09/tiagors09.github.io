@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tiagors09_github_io/about.dart';
-import 'package:tiagors09_github_io/skills.dart';
+import 'package:tiagors09_github_io/projects.dart';
 import 'package:tiagors09_github_io/training_and_experience.dart';
 
 class Home extends StatefulWidget {
@@ -17,7 +17,7 @@ class _HomeState extends State<Home> {
     const HomeScreen(),
     const About(),
     const TrainingAndExperience(),
-    const Skills(),
+    const Projects(),
   ];
 
   final items = [
@@ -82,8 +82,9 @@ class HomeScreen extends StatelessWidget {
           color: Colors.amber,
         ),
         Positioned(
-          top: (screenHeight * 0.50) - 150,
-          left: (screenLeft * 0.5) - 150,
+          top: (screenHeight * 0.5) - 150,
+          left: (screenLeft * 0.25) - 150,
+          right: (screenLeft * 0.25) - 150,
           child: Column(
             children: [
               ClipRRect(

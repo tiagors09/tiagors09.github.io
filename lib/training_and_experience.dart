@@ -14,6 +14,12 @@ class TrainingAndExperience extends StatelessWidget {
         'startDate': '2019',
         'endDate': 'atualmente',
       },
+      {
+        'course': 'Redes de Computadores',
+        'institute': 'EEEP Maria Auday Vasconcelos Nery',
+        'startDate': '2016',
+        'endDate': '2018',
+      },
     ];
     final experiences = [
       {
