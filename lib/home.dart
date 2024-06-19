@@ -27,15 +27,15 @@ class _HomeState extends State<Home> {
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.person),
-      label: 'Sobre',
+      label: 'About',
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.school),
-      label: 'Formação e Experiência',
+      label: 'Training and Experience',
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.work),
-      label: 'Habilidades',
+      label: 'Skills',
     ),
   ];
 
@@ -55,6 +55,9 @@ class _HomeState extends State<Home> {
         child: screens[_currentIdex],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.black,
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white,
         currentIndex: _currentIdex,
         items: items,
         onTap: _onTap,
@@ -76,7 +79,7 @@ class HomeScreen extends StatelessWidget {
         Container(
           width: double.infinity,
           height: screenHeight * 0.5,
-          color: Colors.brown,
+          color: Colors.amber,
         ),
         Positioned(
           top: (screenHeight * 0.50) - 150,
@@ -87,10 +90,11 @@ class HomeScreen extends StatelessWidget {
                 borderRadius: const BorderRadius.all(
                   Radius.circular(360),
                 ),
-                child: Image.network(
-                  'https://avatars.githubusercontent.com/u/38366602?v=4',
+                child: Image.asset(
+                  'assets/images/profile_pic.png',
                   width: 300,
                   height: 300,
+                  fit: BoxFit.cover,
                 ),
               ),
               Container(
