@@ -28,24 +28,35 @@ class TrainingAndExperience extends StatelessWidget {
         'company': 'IFPE Afogados da Ingazeira',
         'startDate': 'fev/2024',
         'endDate': 'atualmente',
-        'assignments':
-            'Contribuí significativamente para o desenvolvimento do aplicativo SementeSuite, criado pelo IFPE Afogados de Ingazeira, ao incorporar o cálculo do índice de velocidade de germinação. Meu papel envolveu a divisão do projeto em escopos bem definidos, a implementação de commits convencionais para uma melhor organização do código-fonte, aprimoramento da interface do usuário para uma experiência mais intuitiva, renomeação de arquivos de acordo com as classes correspondentes para uma estrutura mais coesa, modularização de widgets para facilitar a manutenção e redução significativa do código duplicado.',
+        'assignments': [
+          "Contribuição significativa para o desenvolvimento do aplicativo SementeSuite do IFPE Afogados de Ingazeira.",
+          "Incorporação do cálculo do Índice de Velocidade de Germinação no aplicativo.",
+          "Divisão do projeto em escopos bem definidos para uma melhor gestão.",
+          "Implementação de commits convencionais para organizar o código-fonte.",
+          "Aprimoração da interface do usuário, proporcionando uma experiência mais intuitiva.",
+          "Modularização de widgets, facilitando a manutenção do código.",
+          "Redução significativamente o código duplicado, melhorando a eficiência do projeto."
+        ],
       },
       {
         'occupation': 'Estágio em Desenvolvimento Full Stack',
         'company': 'Núcleo de Práticas em Informática',
         'startDate': 'mar/2023',
         'endDate': 'jun/2023',
-        'assignments':
-            'Desenvolvi um sistema abrangente de gerenciamento de internatos para o curso de medicina na UFC Fortaleza, utilizando Spring para criar REST APIs, VueJS para a interface do usuário, e integração com PostgreSQL. Colaborei ativamente em reuniões de Scrum.',
+        'assignments': [
+          "Desenvolvimento de um sistema de gerenciamento de internatos para o curso de medicina na UFC Fortaleza.",
+          "Colaborei ativamente em reuniões de Scrum."
+        ],
       },
       {
         'occupation': 'Estágio em Desenvolvimento Desktop',
         'company': 'Otimize Soluções',
         'startDate': 'ago/2018',
         'endDate': 'dez/2018',
-        'assignments':
-            'Realizei a migração da interface legada do software hospitalar desktop desenvolvido em C# com Windows Forms e integrado ao SQL Server para gestão de dados. Implementei uma nova interface utilizando o Material UI, proporcionando uma experiência mais moderna e intuitiva aos usuários. Durante o processo, adotei o Team Foundation para controle de versão e facilitar o trabalho colaborativo, garantindo uma gestão eficiente do código fonte e promovendo a integração harmoniosa das atualizações.',
+        'assignments': [
+          "Migração da interface legada do software hospitalar desktop.",
+          "Utilização do Team Foundation para controle de versão."
+        ],
       },
     ];
 
@@ -97,11 +108,11 @@ class TrainingAndExperience extends StatelessWidget {
               children: experiences
                   .map(
                     (xp) => Experience(
-                      occupation: xp['occupation']!,
-                      company: xp['company']!,
-                      startDate: xp['startDate']!,
-                      endDate: xp['endDate']!,
-                      assignments: xp['assignments']!,
+                      occupation: xp['occupation']! as String,
+                      company: xp['company']! as String,
+                      startDate: xp['startDate']! as String,
+                      endDate: xp['endDate']! as String,
+                      assignments: xp['assignments']! as List<String>,
                     ),
                   )
                   .toList(),

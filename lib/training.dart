@@ -17,6 +17,7 @@ class Training extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      leading: const Icon(Icons.school),
       title: Container(
         decoration: const BoxDecoration(
           border: Border(

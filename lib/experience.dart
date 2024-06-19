@@ -5,7 +5,7 @@ class Experience extends StatelessWidget {
   final String company;
   final String startDate;
   final String endDate;
-  final String assignments;
+  final List<String> assignments;
 
   const Experience({
     super.key,
@@ -19,6 +19,7 @@ class Experience extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
+      leading: const Icon(Icons.computer),
       title: Container(
         decoration: const BoxDecoration(
           border: Border(
@@ -48,9 +49,13 @@ class Experience extends StatelessWidget {
       ),
       subtitle: Container(
         margin: const EdgeInsets.only(top: 15),
-        child: Text(
-          assignments,
-          textAlign: TextAlign.justify,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: assignments
+              .map(
+                (e) => Text(e),
+              )
+              .toList(),
         ),
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tiagors09_github_io/about.dart';
 import 'package:tiagors09_github_io/projects.dart';
 import 'package:tiagors09_github_io/training_and_experience.dart';
 
@@ -15,7 +14,6 @@ class _HomeState extends State<Home> {
 
   final screens = [
     const HomeScreen(),
-    const About(),
     const TrainingAndExperience(),
     const Projects(),
   ];
@@ -24,10 +22,6 @@ class _HomeState extends State<Home> {
     const BottomNavigationBarItem(
       icon: Icon(Icons.home),
       label: 'Home',
-    ),
-    const BottomNavigationBarItem(
-      icon: Icon(Icons.person),
-      label: 'Sobre',
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.school),
