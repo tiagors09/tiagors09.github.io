@@ -27,15 +27,15 @@ class _HomeState extends State<Home> {
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.person),
-      label: 'About',
+      label: 'Sobre',
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.school),
-      label: 'Training and Experience',
+      label: 'Experiência e Formação',
     ),
     const BottomNavigationBarItem(
       icon: Icon(Icons.work),
-      label: 'Skills',
+      label: 'Projetos',
     ),
   ];
 
@@ -109,7 +109,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      'Junior Mobile Developer | Flutter & Dart',
+                      'Desenvolvedor de Aplicações Móveis | Dart & Flutter',
                     ),
                   ],
                 ),
