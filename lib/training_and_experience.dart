@@ -71,7 +71,7 @@ class TrainingAndExperience extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: const EdgeInsets.only(top: 15, bottom: 10),
+              margin: const EdgeInsets.only(bottom: 10),
               child: const Text(
                 'Formação',
                 textAlign: TextAlign.start,
@@ -96,7 +96,7 @@ class TrainingAndExperience extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(bottom: 10),
               child: const Text(
-                'Exeperiência',
+                'Experiência',
                 textAlign: TextAlign.start,
                 style: TextStyle(
                   fontWeight: FontWeight.bold,

@@ -9,26 +9,36 @@ class Projects extends StatelessWidget {
     final projects = [
       {
         'name': 'bmi-calculator',
+        'description':
+            'Uma calculadora de Índice de Massa Corporal (IMC) simples para calcular e monitorar seu índice de saúde.',
         'site': 'https://bmi-calculator-tiagors09.vercel.app/',
         'thumb': 'assets/images/bmi_calculator.png',
       },
       {
         'name': 'make-your-burger',
+        'description':
+            'Crie seu próprio hambúrguer personalizado com este aplicativo interativo, escolhendo ingredientes e montando seu sanduíche dos sonhos.',
         'site': 'https://make-your-burger-six.vercel.app/',
         'thumb': 'assets/images/make_your_burger.png',
       },
       {
         'name': 'expenses',
+        'description':
+            'Um aplicativo para gerenciar suas despesas financeiras de maneira eficiente e fácil, ajudando a controlar seu orçamento pessoal.',
         'site': 'https://expenses-sooty.vercel.app/',
         'thumb': 'assets/images/expenses.png',
       },
       {
         'name': 'meals',
+        'description':
+            'Explore uma variedade de receitas deliciosas e planeje suas refeições com este aplicativo intuitivo de receitas.',
         'site': 'https://meals-eight-zeta.vercel.app/',
         'thumb': 'assets/images/meals.png',
       },
       {
         'name': 'shop',
+        'description':
+            'Uma loja virtual onde você pode explorar e comprar uma variedade de produtos disponíveis para venda online.',
         'site': 'https://tiagors09.github.io/shop/',
         'thumb': 'assets/images/shop.png',
       }
@@ -92,7 +102,7 @@ class Projects extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        bottom: 20,
+                        top: 50,
                         right: 10,
                         child: Container(
                           width: 300,
@@ -105,6 +115,27 @@ class Projects extends StatelessWidget {
                             projects[i]['name']!,
                             style: const TextStyle(
                               fontSize: 26,
+                              color: Colors.white,
+                            ),
+                            softWrap: true,
+                            overflow: TextOverflow.fade,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 20,
+                        right: 10,
+                        child: Container(
+                          width: 300,
+                          color: Colors.black54,
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 5,
+                            horizontal: 20,
+                          ),
+                          child: Text(
+                            projects[i]['description']!,
+                            style: const TextStyle(
+                              fontSize: 15,
                               color: Colors.white,
                             ),
                             softWrap: true,
