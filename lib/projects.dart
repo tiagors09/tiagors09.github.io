@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 class Projects extends StatelessWidget {
@@ -102,44 +103,40 @@ class Projects extends StatelessWidget {
                         ),
                       ),
                       Positioned(
-                        top: 50,
-                        right: 10,
+                        left: 20,
+                        right: 20,
+                        bottom: 10,
                         child: Container(
                           width: 300,
-                          color: Colors.black54,
+                          color: Colors.black87,
                           padding: const EdgeInsets.symmetric(
                             vertical: 5,
                             horizontal: 20,
                           ),
-                          child: Text(
-                            projects[i]['name']!,
-                            style: const TextStyle(
-                              fontSize: 26,
-                              color: Colors.white,
-                            ),
-                            softWrap: true,
-                            overflow: TextOverflow.fade,
-                          ),
-                        ),
-                      ),
-                      Positioned(
-                        bottom: 20,
-                        right: 10,
-                        child: Container(
-                          width: 300,
-                          color: Colors.black54,
-                          padding: const EdgeInsets.symmetric(
-                            vertical: 5,
-                            horizontal: 20,
-                          ),
-                          child: Text(
-                            projects[i]['description']!,
-                            style: const TextStyle(
-                              fontSize: 15,
-                              color: Colors.white,
-                            ),
-                            softWrap: true,
-                            overflow: TextOverflow.fade,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                projects[i]['name']!,
+                                style: const TextStyle(
+                                  fontSize: 26,
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                                softWrap: true,
+                                overflow: TextOverflow.fade,
+                              ),
+                              Text(
+                                projects[i]['description']!,
+                                textAlign: TextAlign.justify,
+                                style: const TextStyle(
+                                  fontSize: 15,
+                                  color: Colors.white,
+                                ),
+                                softWrap: true,
+                                overflow: TextOverflow.fade,
+                              ),
+                            ],
                           ),
                         ),
                       ),
