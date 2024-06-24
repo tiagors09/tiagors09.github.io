@@ -12,41 +12,41 @@ class Projects extends StatelessWidget {
         'description':
             'Uma calculadora de Índice de Massa Corporal (IMC) simples para calcular e monitorar seu índice de saúde.',
         'site': 'https://bmi-calculator-tiagors09.vercel.app/',
-        'thumb': '/images/bmi_calculator.png',
+        'thumb': 'assets/images/bmi_calculator.png',
       },
       {
         'name': 'make-your-burger',
         'description':
             'Crie seu próprio hambúrguer personalizado com este aplicativo interativo, escolhendo ingredientes e montando seu sanduíche dos sonhos.',
         'site': 'https://make-your-burger-six.vercel.app/',
-        'thumb': '/images/make_your_burger.png',
+        'thumb': 'assets/images/make_your_burger.png',
       },
       {
         'name': 'expenses',
         'description':
             'Um aplicativo para gerenciar suas despesas financeiras de maneira eficiente e fácil, ajudando a controlar seu orçamento pessoal.',
         'site': 'https://expenses-sooty.vercel.app/',
-        'thumb': '/images/expenses.png',
+        'thumb': 'assets/images/expenses.png',
       },
       {
         'name': 'meals',
         'description':
             'Explore uma variedade de receitas deliciosas e planeje suas refeições com este aplicativo intuitivo de receitas.',
         'site': 'https://meals-eight-zeta.vercel.app/',
-        'thumb': '/images/meals.png',
+        'thumb': 'assets/images/meals.png',
       },
       {
         'name': 'shop',
         'description':
             'Uma loja virtual onde você pode explorar e comprar uma variedade de produtos disponíveis para venda online.',
         'site': 'https://tiagors09.github.io/shop/',
-        'thumb': '/images/shop.png',
+        'thumb': 'assets/images/shop.png',
       },
       {
         'name': 'calculator',
         'description': 'Calculadora simples.',
         'site': 'https://calculator-tau-one-62.vercel.app/',
-        'thumb': '/images/calculator.png',
+        'thumb': 'assets/images/calculator.png',
       }
     ];
     return Column(
