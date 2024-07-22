@@ -69,11 +69,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final social = [
       {
-        'icon': const Icon(FontAwesomeIcons.linkedin),
+        'icon': FontAwesomeIcons.linkedin,
         'url': 'https://www.linkedin.com/in/tiagors09/',
       },
       {
-        'icon': const Icon(FontAwesomeIcons.github),
+        'icon': FontAwesomeIcons.github,
         'url': 'https://github.com/tiagors09/',
       },
     ];
