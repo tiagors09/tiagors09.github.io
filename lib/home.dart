@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tiagors09_github_io/projects.dart';
 import 'package:tiagors09_github_io/training_and_experience.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -65,6 +67,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final social = [
+      {
+        'icon': const Icon(FontAwesomeIcons.linkedin),
+        'url': 'https://www.linkedin.com/in/tiagors09/',
+      },
+      {
+        'icon': const Icon(FontAwesomeIcons.github),
+        'url': 'https://github.com/tiagors09/',
+      },
+    ];
+
     final screenHeight = MediaQuery.of(context).size.height;
     final screenLeft = MediaQuery.of(context).size.width;
 
@@ -94,18 +107,35 @@ class HomeScreen extends StatelessWidget {
               ),
               Container(
                 margin: const EdgeInsets.all(10),
-                child: const Column(
+                child: Column(
                   children: [
-                    Text(
+                    const Text(
                       'Tiago Rodrigues Sousa',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 17,
                       ),
                     ),
-                    Text(
+                    const Text(
                       'Desenvolvedor de Aplicações Móveis | Dart & Flutter',
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: social
+                          .map(
+                            (e) => IconButton(
+                              onPressed: () {
+                                canLaunchUrlString(e['url']! as String).then(
+                                  (value) => launchUrlString(
+                                    e['url']! as String,
+                                  ),
+                                );
+                              },
+                              icon: Icon(e['icon']! as IconData),
+                            ),
+                          )
+                          .toList(),
+                    )
                   ],
                 ),
               ),

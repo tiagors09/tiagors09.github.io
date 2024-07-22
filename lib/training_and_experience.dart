@@ -27,7 +27,7 @@ class TrainingAndExperience extends StatelessWidget {
             'Trabalho voluntário em desenvolvimento de aplicação móvel',
         'company': 'IFPE Afogados da Ingazeira',
         'startDate': 'fev/2024',
-        'endDate': 'atualmente',
+        'endDate': 'jun/2024',
         'assignments': [
           "Contribuição significativa para o desenvolvimento do aplicativo SementeSuite do IFPE Afogados de Ingazeira.",
           "Incorporação do cálculo do Índice de Velocidade de Germinação no aplicativo.",

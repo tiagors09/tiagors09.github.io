@@ -8,14 +8,14 @@ class Projects extends StatelessWidget {
   Widget build(BuildContext context) {
     final projects = [
       {
-        'name': 'bmi-calculator',
+        'name': 'bmi calculator',
         'description':
             'Uma calculadora de Índice de Massa Corporal (IMC) simples para calcular e monitorar seu índice de saúde.',
         'site': 'https://bmi-calculator-tiagors09.vercel.app/',
         'thumb': 'assets/images/bmi_calculator.png',
       },
       {
-        'name': 'make-your-burger',
+        'name': 'make your burger',
         'description':
             'Crie seu próprio hambúrguer personalizado com este aplicativo interativo, escolhendo ingredientes e montando seu sanduíche dos sonhos.',
         'site': 'https://make-your-burger-six.vercel.app/',
