@@ -69,6 +69,8 @@ flutter:
     - assets/images/shop.png
     - assets/images/make_your_burger.png
     - assets/images/calculator.png
+    - assets/images/sao_paulo.jpg
+    - assets/images/maps.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

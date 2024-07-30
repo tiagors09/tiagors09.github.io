@@ -49,11 +49,17 @@ class Projects extends StatelessWidget {
         'thumb': 'assets/images/calculator.png',
       },
       {
+        'name': 'great places',
+        'description': 'App para guardar locais favoritos.',
+        'site': 'https://github.com/tiagors09/great_places',
+        'thumb': 'assets/images/maps.png',
+      },
+      {
         'name': 'OlhoVivoSP',
         'description':
             'App para consulta de corredores, paradas e previsão de chegada de ônibus de São Paulo.',
-        'site': 'https://calculator-tau-one-62.vercel.app/',
-        'thumb': 'assets/images/calculator.png',
+        'site': 'https://github.com/tiagors09/teste-android-estagio-v1',
+        'thumb': 'assets/images/sao_paulo.png',
       }
     ];
     return Column(
