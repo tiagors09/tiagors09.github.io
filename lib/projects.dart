@@ -52,14 +52,14 @@ class Projects extends StatelessWidget {
         'name': 'great places',
         'description': 'App para guardar locais favoritos.',
         'site': 'https://github.com/tiagors09/great_places',
-        'thumb': 'assets/images/maps.png',
+        'thumb': 'assets/images/maps.jpg',
       },
       {
         'name': 'OlhoVivoSP',
         'description':
             'App para consulta de corredores, paradas e previsão de chegada de ônibus de São Paulo.',
         'site': 'https://github.com/tiagors09/teste-android-estagio-v1',
-        'thumb': 'assets/images/sao_paulo.png',
+        'thumb': 'assets/images/sao_paulo.jpg',
       }
     ];
     return Column(
