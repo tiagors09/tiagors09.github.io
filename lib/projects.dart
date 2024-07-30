@@ -47,6 +47,13 @@ class Projects extends StatelessWidget {
         'description': 'Calculadora simples.',
         'site': 'https://calculator-tau-one-62.vercel.app/',
         'thumb': 'assets/images/calculator.png',
+      },
+      {
+        'name': 'OlhoVivoSP',
+        'description':
+            'App para consulta de corredores, paradas e previsão de chegada de ônibus de São Paulo.',
+        'site': 'https://calculator-tau-one-62.vercel.app/',
+        'thumb': 'assets/images/calculator.png',
       }
     ];
     return Column(
