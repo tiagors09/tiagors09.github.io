@@ -16,7 +16,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
     
       - name: Install Flutter
         uses: subosito/flutter-action@v1
@@ -30,7 +30,7 @@ jobs:
         run: flutter build web --base-href=/ 
 
       - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: production-files
           path: ./build/web
@@ -42,10 +42,10 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       
       - name: Download artifact
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4
         with:
           name: production-files
           path: ./build

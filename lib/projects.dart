@@ -58,6 +58,13 @@ class Projects extends StatelessWidget {
             'App para consulta de corredores, paradas e previsão de chegada de ônibus de São Paulo.',
         'site': 'https://github.com/tiagors09/teste-android-estagio-v1',
         'thumb': 'assets/images/sao_paulo.jpg',
+      },
+      {
+        'name': 'Calorie Way',
+        'description':
+            'Um aplicativo para ajudar os usuários a calcular a ingestão diária recomendada de calorias com base no seu perfil físico e objetivos de peso.',
+        'site': 'https://github.com/tiagors09/calorie_way',
+        'thumb': 'assets/images/calorie_way.png',
       }
     ];
 
