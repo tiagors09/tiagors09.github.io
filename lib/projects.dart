@@ -130,7 +130,7 @@ class Projects extends StatelessWidget {
                         Text(
                           projects[i]['name']!,
                           style: TextStyle(
-                            fontSize: isSmartphone ? 12 : 20,
+                            fontSize: isSmartphone ? 15 : 20,
                             color: Colors.white,
                             fontWeight: FontWeight.w600,
                           ),
@@ -141,7 +141,7 @@ class Projects extends StatelessWidget {
                           projects[i]['description']!,
                           textAlign: TextAlign.justify,
                           style: TextStyle(
-                            fontSize: isSmartphone ? 10 : 15,
+                            fontSize: isSmartphone ? 13 : 15,
                             color: Colors.white,
                           ),
                           softWrap: true,
