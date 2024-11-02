@@ -158,7 +158,7 @@ class Projects extends StatelessWidget {
       },
       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: isSmartphone ? 1 : 2,
-        childAspectRatio: 5 / 2,
+        childAspectRatio: isSmartphone ? 3 / 2 : 5 / 2,
       ),
     );
   }
