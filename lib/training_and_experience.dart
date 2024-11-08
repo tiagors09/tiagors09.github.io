@@ -23,6 +23,21 @@ class TrainingAndExperience extends StatelessWidget {
     ];
     final experiences = [
       {
+        "occupation":
+            "Líder Técnico | Trabalho Voluntário em Desenvolvimento de Aplicação Móvel",
+        "company": "Avante Tech JR",
+        "startDate": "Setembro de 2024",
+        "endDate": "Atualmente",
+        "assignments": [
+          "Liderança e desenvolvimento do projeto 'Pé na Pedra', tema do TCC2.",
+          "Realização de coleta de dados por meio de investigação contextual e formulários.",
+          "Definição e análise de requisitos utilizando casos de uso.",
+          "Especificação do sistema com diagramas de sequência e de classes.",
+          "Prototipação e design da interface do projeto.",
+          "Desenvolvimento e implementação da aplicação móvel 'Pé na Pedra'."
+        ]
+      },
+      {
         'occupation':
             'Trabalho voluntário em desenvolvimento de aplicação móvel',
         'company': 'IFPE Afogados da Ingazeira',
