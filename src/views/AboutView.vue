@@ -5,19 +5,16 @@ import { useI18n } from 'vue-i18n'
 import profile from '@/data/profile.json'
 import skills from '@/data/skills.json'
 import useLangStore from '@/stores/lang'
-import useThemeStore from '@/stores/theme'
 
 const { t } = useI18n()
 
-const themeStore = useThemeStore()
 const langStore = useLangStore()
 
-const { theme } = storeToRefs(themeStore)
 const { language } = storeToRefs(langStore)
 </script>
 
 <template>
-  <section class="section" :class="`is-${theme}`">
+  <section class="section">
     <div class="container">
 
       <h1 class="title is-2">

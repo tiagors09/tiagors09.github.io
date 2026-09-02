@@ -1,17 +1,12 @@
 <script setup lang="ts">
-import useThemeStore from '@/stores/theme';
-import { storeToRefs } from 'pinia';
 import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
 
 const { t } = useI18n()
-
-const themeStore = useThemeStore()
-const { theme } = storeToRefs(themeStore)
 </script>
 
 <template>
-  <section class="hero is-medium" :class="`is-${theme}`">
+  <section class="hero is-medium">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
@@ -50,7 +45,7 @@ const { theme } = storeToRefs(themeStore)
           </div>
 
           <div class="column">
-            <div class="box" :class="`is-${theme}`">
+            <div class="box">
               <p class="heading">
                 {{ t('home.role') }}
               </p>

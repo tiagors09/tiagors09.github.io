@@ -6,15 +6,11 @@ import { useI18n } from 'vue-i18n'
 import ExperienceList from '@/components/ExperienceList.vue'
 import experiences from '@/data/experiences.json'
 import useLangStore from '@/stores/lang'
-import useThemeStore from '@/stores/theme'
 
 const { t } = useI18n()
 
 const langStore = useLangStore()
 const { language } = storeToRefs(langStore)
-
-const themeStore = useThemeStore()
-const { theme } = storeToRefs(themeStore)
 
 const localizedExperiences = computed(() =>
   experiences.map((experience) => ({
@@ -26,7 +22,7 @@ const localizedExperiences = computed(() =>
 </script>
 
 <template>
-  <section class="section" :class="`is-${theme}`">
+  <section class="section">
     <div class="container">
       <h1 class="title">
         {{ t('experience.title') }}
