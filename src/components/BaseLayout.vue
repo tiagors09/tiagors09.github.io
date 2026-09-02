@@ -61,6 +61,11 @@ const { theme } = storeToRefs(themeStore)
   color: #4b5563;
 }
 
+.base-layout.is-light :deep(.box li),
+.base-layout.is-light :deep(.card li) {
+  color: #24292f;
+}
+
 .base-layout.is-light :deep(a:not(.button)) {
   color: #075985;
 }
@@ -108,6 +113,11 @@ const { theme } = storeToRefs(themeStore)
 .base-layout.is-dark :deep(.subtitle),
 .base-layout.is-dark :deep(.has-text-grey) {
   color: #cbd5e1;
+}
+
+.base-layout.is-dark :deep(.box li),
+.base-layout.is-dark :deep(.card li) {
+  color: #f3f4f6;
 }
 
 .base-layout.is-dark :deep(a:not(.button)) {
