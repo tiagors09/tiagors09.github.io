@@ -1,0 +1,84 @@
+{
+  "technical": [
+    {
+      "name": "Flutter",
+      "level": "advanced"
+    },
+    {
+      "name": "Dart",
+      "level": "advanced"
+    },
+    {
+      "name": "Clean Architecture",
+      "level": "advanced"
+    },
+    {
+      "name": "BLoC / Cubit",
+      "level": "advanced"
+    },
+    {
+      "name": "Provider",
+      "level": "intermediate"
+    },
+    {
+      "name": "Unit Testing",
+      "level": "advanced"
+    },
+    {
+      "name": "Widget Testing",
+      "level": "advanced"
+    },
+    {
+      "name": "REST APIs",
+      "level": "advanced"
+    },
+    {
+      "name": "Git",
+      "level": "advanced"
+    },
+    {
+      "name": "Vue.js",
+      "level": "intermediate"
+    },
+    {
+      "name": "Spring Boot",
+      "level": "intermediate"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "intermediate"
+    },
+    {
+      "name": "Docker",
+      "level": "intermediate"
+    },
+    {
+      "name": "Scrum",
+      "level": "intermediate"
+    }
+  ],
+  "soft": {
+    "pt-BR": [
+      "Resolução de problemas",
+      "Pensamento analítico",
+      "Trabalho em equipe",
+      "Comunicação",
+      "Proatividade",
+      "Organização",
+      "Atenção aos detalhes",
+      "Facilidade de aprendizado",
+      "Liderança técnica"
+    ],
+    "en-US": [
+      "Problem solving",
+      "Analytical thinking",
+      "Teamwork",
+      "Communication",
+      "Proactivity",
+      "Organization",
+      "Attention to detail",
+      "Fast learning",
+      "Technical leadership"
+    ]
+  }
+}

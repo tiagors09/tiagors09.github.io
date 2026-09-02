@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tars",
+    "title": {
+      "pt-BR": "Estabilidade e qualidade do TARS",
+      "en-US": "TARS stability and quality"
+    },
+    "description": {
+      "pt-BR": "Aumento da estabilidade do TARS por meio de testes automatizados e refatoração do processamento assíncrono, contribuindo para a redução de falhas e melhoria do processo de publicação nas lojas.",
+      "en-US": "Improved TARS stability through automated testing and asynchronous processing refactoring, helping reduce failures and improve the application release process."
+    },
+    "company": "Robovisor LLC",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Automated Testing",
+      "Async Programming"
+    ]
+  },
+  {
+    "id": "pe-na-pedra",
+    "title": {
+      "pt-BR": "Liderança técnica do Pé na Pedra",
+      "en-US": "Technical leadership of Pé na Pedra"
+    },
+    "description": {
+      "pt-BR": "Liderança técnica do projeto desde o levantamento e análise de requisitos até o desenvolvimento e entrega em produção.",
+      "en-US": "Technical leadership of the project from requirements gathering and analysis through development and production delivery."
+    },
+    "company": "Avante Tech JR",
+    "technologies": [
+      "Software Engineering",
+      "UML",
+      "Git",
+      "Technical Leadership"
+    ]
+  },
+  {
+    "id": "ifpe-modularization",
+    "title": {
+      "pt-BR": "Redução de débito técnico",
+      "en-US": "Technical debt reduction"
+    },
+    "description": {
+      "pt-BR": "Redução de débito técnico por meio da modularização de componentes Flutter, criação de estruturas reutilizáveis e implementação de testes unitários.",
+      "en-US": "Reduced technical debt through Flutter component modularization, reusable structures, and unit test implementation."
+    },
+    "company": "IFPE",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Unit Testing",
+      "Software Architecture"
+    ]
+  }
+]

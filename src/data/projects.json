@@ -1,0 +1,144 @@
+[
+  {
+    "id": "bmi-calculator",
+    "name": "BMI Calculator",
+    "description": {
+      "pt-BR": "Calculadora prática de IMC.",
+      "en-US": "A practical BMI calculator."
+    },
+    "site": "https://bmi-calculator-tiagors09.vercel.app/",
+    "github": "https://github.com/tiagors09/bmi-calculator",
+    "image": "/images/bmi_calculator.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "make-your-burger",
+    "name": "Make Your Burger",
+    "description": {
+      "pt-BR": "Monte seu hambúrguer ideal.",
+      "en-US": "Build your ideal burger."
+    },
+    "site": "https://make-your-burger-six.vercel.app/",
+    "github": "https://github.com/tiagors09/make-your-burger",
+    "image": "/images/make_your_burger.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "expenses",
+    "name": "Expenses",
+    "description": {
+      "pt-BR": "Gerencie suas despesas de forma simples.",
+      "en-US": "Manage your expenses with ease."
+    },
+    "site": "https://expenses-sooty.vercel.app/",
+    "github": "https://github.com/tiagors09/expenses",
+    "image": "/images/expenses.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "meals",
+    "name": "Meals",
+    "description": {
+      "pt-BR": "Aplicativo simples para explorar receitas.",
+      "en-US": "A simple application for exploring recipes."
+    },
+    "site": "https://meals-eight-zeta.vercel.app/",
+    "github": "https://github.com/tiagors09/meals",
+    "image": "/images/meals.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "shop",
+    "name": "Shop",
+    "description": {
+      "pt-BR": "Loja virtual com catálogo de produtos.",
+      "en-US": "An online store with a product catalog."
+    },
+    "site": "https://tiagors09.github.io/shop/",
+    "github": "https://github.com/tiagors09/shop",
+    "image": "/images/shop.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "GitHub Pages"
+    ]
+  },
+  {
+    "id": "calculator",
+    "name": "Calculator",
+    "description": {
+      "pt-BR": "Calculadora simples e prática para operações matemáticas.",
+      "en-US": "A simple and practical calculator for mathematical operations."
+    },
+    "site": "https://calculator-tau-one-62.vercel.app/",
+    "github": "https://github.com/tiagors09/calculator",
+    "image": "/images/calculator.png",
+    "technologies": [
+      "Vue.js",
+      "JavaScript",
+      "Vercel"
+    ]
+  },
+  {
+    "id": "great-places",
+    "name": "Great Places",
+    "description": {
+      "pt-BR": "Aplicativo para salvar e gerenciar seus locais favoritos.",
+      "en-US": "An application for saving and managing your favorite places."
+    },
+    "site": "",
+    "github": "https://github.com/tiagors09/great_places",
+    "image": "/images/maps.jpg",
+    "technologies": [
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "id": "olho-vivo-sp",
+    "name": "OlhoVivoSP",
+    "description": {
+      "pt-BR": "Aplicativo para consultar informações de ônibus de São Paulo.",
+      "en-US": "An application for checking bus information in São Paulo."
+    },
+    "site": "",
+    "github": "https://github.com/tiagors09/teste-android-estagio-v1",
+    "image": "/images/sao_paulo.jpg",
+    "technologies": [
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    "id": "calorie-way",
+    "name": "Calorie Way",
+    "description": {
+      "pt-BR": "Aplicativo para calcular suas necessidades diárias de calorias.",
+      "en-US": "An application for calculating your daily calorie needs."
+    },
+    "site": "https://calorie-way.vercel.app/",
+    "github": "https://github.com/tiagors09/calorie_way",
+    "image": "/images/calorie_way.png",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Vercel"
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "ufc",
+    "degree": {
+      "pt-BR": "Ciência da Computação",
+      "en-US": "Computer Science"
+    },
+    "institution": "Universidade Federal do Ceará (UFC)",
+    "startYear": 2019,
+    "endYear": 2026,
+    "status": {
+      "pt-BR": "Concluído",
+      "en-US": "Completed"
+    }
+  },
+  {
+    "id": "technical-networking",
+    "degree": {
+      "pt-BR": "Curso Técnico em Redes de Computadores",
+      "en-US": "Computer Networking Technician"
+    },
+    "institution": "EEEP Maria Auday Vasconcelos Nery",
+    "startYear": null,
+    "endYear": 2018,
+    "status": {
+      "pt-BR": "Concluído",
+      "en-US": "Completed"
+    }
+  }
+]

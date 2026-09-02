@@ -1,0 +1,180 @@
+[
+  {
+    "id": "robovisor",
+    "company": "Robovisor LLC",
+    "role": {
+      "pt-BR": "Desenvolvedor Flutter Pleno",
+      "en-US": "Mid-Level Flutter Developer"
+    },
+    "startDate": "2026-01",
+    "endDate": null,
+    "current": true,
+    "description": {
+      "pt-BR": [
+        "Manutenção e evolução do aplicativo TARS, agente de IA da empresa.",
+        "Refatoração de código visando escalabilidade, manutenibilidade e redução de débito técnico.",
+        "Correção de bugs e implementação de novas funcionalidades.",
+        "Otimização de performance e experiência do usuário.",
+        "Criação e execução de testes unitários e de widget em Flutter.",
+        "Suporte ao processo de build e publicação de versões na App Store e Play Store.",
+        "Atuação em ambiente colaborativo com foco em entregas contínuas."
+      ],
+      "en-US": [
+        "Maintenance and evolution of TARS, the company's AI agent application.",
+        "Code refactoring focused on scalability, maintainability, and technical debt reduction.",
+        "Bug fixing and implementation of new features.",
+        "Performance and user experience optimization.",
+        "Creation and execution of unit and widget tests in Flutter.",
+        "Support for build and release processes on the App Store and Play Store.",
+        "Collaborative work focused on continuous delivery."
+      ]
+    },
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Unit Testing",
+      "Widget Testing",
+      "Clean Architecture",
+      "Git"
+    ]
+  },
+  {
+    "id": "fteam",
+    "company": "FTeam",
+    "role": {
+      "pt-BR": "Desenvolvedor Flutter Pleno",
+      "en-US": "Mid-Level Flutter Developer"
+    },
+    "startDate": "2025-08",
+    "endDate": "2025-12",
+    "current": false,
+    "description": {
+      "pt-BR": [
+        "Desenvolvimento e manutenção de aplicações mobile em Flutter.",
+        "Participação na resolução de problemas técnicos e evolução contínua dos produtos.",
+        "Desenvolvimento de funcionalidades para sistema de rastreamento de informações.",
+        "Contribuição em plataforma SaaS integrada a múltiplos sistemas."
+      ],
+      "en-US": [
+        "Development and maintenance of mobile applications using Flutter.",
+        "Participation in solving technical problems and continuously improving products.",
+        "Development of features for an information tracking system.",
+        "Contribution to a SaaS platform integrated with multiple systems."
+      ]
+    },
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "SaaS",
+      "REST API",
+      "Git"
+    ]
+  },
+  {
+    "id": "avante",
+    "company": "Avante Tech JR",
+    "role": {
+      "pt-BR": "Engenheiro de Software",
+      "en-US": "Software Engineer"
+    },
+    "startDate": "2024-09",
+    "endDate": "2025-01",
+    "current": false,
+    "description": {
+      "pt-BR": [
+        "Liderança técnica de equipe de desenvolvimento.",
+        "Levantamento e análise de requisitos.",
+        "Modelagem UML e prototipação.",
+        "Coordenação do desenvolvimento do aplicativo Pé na Pedra.",
+        "Acompanhamento do desenvolvimento desde a análise de requisitos até a entrega em produção.",
+        "Utilização de Git para versionamento de código."
+      ],
+      "en-US": [
+        "Technical leadership of a development team.",
+        "Requirements gathering and analysis.",
+        "UML modeling and prototyping.",
+        "Coordination of the Pé na Pedra application development.",
+        "Oversight of the development process from requirements analysis to production delivery.",
+        "Use of Git for source code versioning."
+      ]
+    },
+    "technologies": [
+      "Software Engineering",
+      "UML",
+      "Git",
+      "Requirements Analysis",
+      "Technical Leadership"
+    ]
+  },
+  {
+    "id": "ifpe",
+    "company": "Instituto Federal de Pernambuco (IFPE)",
+    "role": {
+      "pt-BR": "Desenvolvedor Flutter Jr",
+      "en-US": "Junior Flutter Developer"
+    },
+    "startDate": "2024-02",
+    "endDate": "2024-06",
+    "current": false,
+    "description": {
+      "pt-BR": [
+        "Desenvolvimento de funcionalidades em Flutter.",
+        "Modularização de componentes e redução de código duplicado.",
+        "Estruturação de projeto com versionamento Git.",
+        "Aplicação de boas práticas de manutenção e organização de código.",
+        "Implementação de testes unitários para reutilização de código e redução de débito técnico."
+      ],
+      "en-US": [
+        "Development of features using Flutter.",
+        "Component modularization and reduction of duplicated code.",
+        "Project structuring with Git version control.",
+        "Application of code maintenance and organization best practices.",
+        "Implementation of unit tests for code reuse and technical debt reduction."
+      ]
+    },
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Unit Testing",
+      "Git",
+      "Software Architecture"
+    ]
+  },
+  {
+    "id": "npi",
+    "company": "Núcleo de Práticas em Informática (NPI)",
+    "role": {
+      "pt-BR": "Desenvolvedor Full Stack Jr",
+      "en-US": "Junior Full Stack Developer"
+    },
+    "startDate": "2023-03",
+    "endDate": "2023-07",
+    "current": false,
+    "description": {
+      "pt-BR": [
+        "Desenvolvimento Full Stack utilizando Spring Boot e Vue.js.",
+        "Implementação de funcionalidades para sistema de gerenciamento acadêmico.",
+        "Integração com PostgreSQL.",
+        "Participação em sprints Scrum.",
+        "Colaboração em testes e revisão de funcionalidades.",
+        "Utilização de Git para versionamento de código."
+      ],
+      "en-US": [
+        "Full Stack development using Spring Boot and Vue.js.",
+        "Implementation of features for an academic management system.",
+        "PostgreSQL integration.",
+        "Participation in Scrum sprints.",
+        "Collaboration on testing and feature reviews.",
+        "Use of Git for source code versioning."
+      ]
+    },
+    "technologies": [
+      "Spring Boot",
+      "Java",
+      "Vue.js",
+      "PostgreSQL",
+      "Git",
+      "Scrum"
+    ]
+  }
+]
