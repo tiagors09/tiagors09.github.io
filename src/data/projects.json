@@ -8,7 +8,7 @@
     },
     "site": "https://bmi-calculator-tiagors09.vercel.app/",
     "github": "https://github.com/tiagors09/bmi-calculator",
-    "image": "/images/bmi_calculator.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -24,7 +24,7 @@
     },
     "site": "https://make-your-burger-six.vercel.app/",
     "github": "https://github.com/tiagors09/make-your-burger",
-    "image": "/images/make_your_burger.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -40,7 +40,7 @@
     },
     "site": "https://expenses-sooty.vercel.app/",
     "github": "https://github.com/tiagors09/expenses",
-    "image": "/images/expenses.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -56,7 +56,7 @@
     },
     "site": "https://meals-eight-zeta.vercel.app/",
     "github": "https://github.com/tiagors09/meals",
-    "image": "/images/meals.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -72,7 +72,7 @@
     },
     "site": "https://tiagors09.github.io/shop/",
     "github": "https://github.com/tiagors09/shop",
-    "image": "/images/shop.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -88,7 +88,7 @@
     },
     "site": "https://calculator-tau-one-62.vercel.app/",
     "github": "https://github.com/tiagors09/calculator",
-    "image": "/images/calculator.png",
+    "image": "",
     "technologies": [
       "Vue.js",
       "JavaScript",
@@ -104,7 +104,7 @@
     },
     "site": "",
     "github": "https://github.com/tiagors09/great_places",
-    "image": "/images/maps.jpg",
+    "image": "",
     "technologies": [
       "Flutter",
       "Dart"
@@ -119,7 +119,7 @@
     },
     "site": "",
     "github": "https://github.com/tiagors09/teste-android-estagio-v1",
-    "image": "/images/sao_paulo.jpg",
+    "image": "",
     "technologies": [
       "Flutter",
       "Dart"
@@ -134,11 +134,225 @@
     },
     "site": "https://calorie-way.vercel.app/",
     "github": "https://github.com/tiagors09/calorie_way",
-    "image": "/images/calorie_way.png",
+    "image": "",
     "technologies": [
       "Flutter",
       "Dart",
       "Vercel"
+    ]
+  },
+  {
+    "id": "dungeon-cleaner",
+    "name": "Dungeon Cleaner",
+    "description": {
+      "pt-BR": "Um jogo idle de estratégia com estética pixel art e progressão baseada em melhorias.",
+      "en-US": "An idle strategy game with pixel art aesthetics and upgrade-based progression."
+    },
+    "site": "https://tiagors09.itch.io/dungeon-cleaner",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "rogueworm",
+    "name": "Rogueworm",
+    "description": {
+      "pt-BR": "Um roguelite com combate por turnos, exploração e progressão.",
+      "en-US": "A roguelite featuring turn-based combat, exploration, and progression."
+    },
+    "site": "https://tiagors09.itch.io/rogueworm",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Godot"
+    ]
+  },
+  {
+    "id": "flappy-dead",
+    "name": "Flappy Dead",
+    "description": {
+      "pt-BR": "Uma releitura do estilo Flappy Bird com temática de terror e mecânicas de tiro.",
+      "en-US": "A reimagining of the Flappy Bird style featuring a horror theme and shooting mechanics."
+    },
+    "site": "https://tiagors09.itch.io/flappy-dead",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "locked-in-cursed-dungeon",
+    "name": "Locked in Cursed Dungeon",
+    "description": {
+      "pt-BR": "Jogo de plataforma desenvolvido para uma game jam, inspirado na estética dos jogos de Game Boy e baseado em uma mecânica de um único botão.",
+      "en-US": "A platform game developed for a game jam, inspired by Game Boy aesthetics and based on single-button mechanics."
+    },
+    "site": "https://tiagors09.itch.io/locked-in-cursed-dungeon",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "picking-chickens",
+    "name": "Picking Chickens",
+    "description": {
+      "pt-BR": "Jogo independente desenvolvido como projeto de desenvolvimento de jogos.",
+      "en-US": "An indie game developed as a game development project."
+    },
+    "site": "https://tiagors09.itch.io/picking-chickens",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "against-slimes",
+    "name": "Against Slimes",
+    "description": {
+      "pt-BR": "Jogo independente desenvolvido como projeto de experimentação em desenvolvimento de jogos.",
+      "en-US": "An indie game developed as an experimental project in game development."
+    },
+    "site": "https://tiagors09.itch.io/against-slimes",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "warrior-vs-monsters",
+    "name": "Warrior vs Monsters",
+    "description": {
+      "pt-BR": "Jogo independente focado em combate contra monstros.",
+      "en-US": "An indie game focused on combat against monsters."
+    },
+    "site": "https://tiagors09.itch.io/warrior-vs-monsters",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "pong",
+    "name": "Pong",
+    "description": {
+      "pt-BR": "Implementação independente do clássico jogo Pong.",
+      "en-US": "An indie implementation of the classic game Pong."
+    },
+    "site": "https://tiagors09.itch.io/pong",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "flappy-plane",
+    "name": "Flappy Plane",
+    "description": {
+      "pt-BR": "Jogo arcade inspirado na fórmula de Flappy Bird.",
+      "en-US": "An arcade game inspired by the Flappy Bird formula."
+    },
+    "site": "https://tiagors09.itch.io/flappy-plane",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "GameMaker"
+    ]
+  },
+  {
+    "id": "tars",
+    "name": "TARS",
+    "description": {
+      "pt-BR": "Aplicativo de agente de inteligência artificial desenvolvido pela Robovisor, com atuação em manutenção, evolução, refatoração, testes, performance e publicação.",
+      "en-US": "AI agent application developed by Robovisor, with work in maintenance, evolution, refactoring, testing, performance, and publishing."
+    },
+    "site": "",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Clean Architecture",
+      "BLoC",
+      "Unit Tests",
+      "Widget Tests",
+      "AWS S3"
+    ]
+  },
+  {
+    "id": "tracking-saas-platform",
+    "name": "Tracking & SaaS Platform",
+    "description": {
+      "pt-BR": "Aplicações mobile e plataforma SaaS integrada a múltiplos sistemas, com desenvolvimento de funcionalidades para rastreamento de informações.",
+      "en-US": "Mobile applications and a SaaS platform integrated with multiple systems, developing features for information tracking."
+    },
+    "site": "",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "SaaS"
+    ]
+  },
+  {
+    "id": "pe-na-pedra",
+    "name": "Pé na Pedra",
+    "description": {
+      "pt-BR": "Aplicativo coordenado tecnicamente desde o levantamento de requisitos até o desenvolvimento e entrega.",
+      "en-US": "Technically coordinated application from requirements gathering to development and delivery."
+    },
+    "site": "",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Git",
+      "UML"
+    ]
+  },
+  {
+    "id": "semente-suite",
+    "name": "SementeSuite",
+    "description": {
+      "pt-BR": "Projeto Flutter com foco em modularização, reutilização de componentes, testes unitários e redução de débito técnico.",
+      "en-US": "Flutter project focused on modularization, component reuse, unit testing, and technical debt reduction."
+    },
+    "site": "",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "Unit Tests",
+      "Git"
+    ]
+  },
+  {
+    "id": "academic-management-system",
+    "name": "Sistema de Gerenciamento Acadêmico",
+    "description": {
+      "pt-BR": "Sistema acadêmico Full Stack desenvolvido com Spring Boot e Vue.js, integrado ao PostgreSQL.",
+      "en-US": "Full Stack academic system developed with Spring Boot and Vue.js, integrated with PostgreSQL."
+    },
+    "site": "",
+    "github": "",
+    "image": "",
+    "technologies": [
+      "Spring Boot",
+      "Vue.js",
+      "PostgreSQL",
+      "Git",
+      "Scrum"
     ]
   }
 ]

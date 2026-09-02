@@ -4,6 +4,7 @@ export default interface Project {
   description: string
   technologies: string[]
   image?: string
+  site?: string
   github?: string
   demo?: string
 }

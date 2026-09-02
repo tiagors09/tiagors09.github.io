@@ -48,7 +48,7 @@ const { theme } = storeToRefs(themeStore)
     </div>
 
     <footer
-      v-if="project.github || project.demo"
+      v-if="project.github || project.site || project.demo"
       class="card-footer"
     >
       <a
@@ -67,18 +67,18 @@ const { theme } = storeToRefs(themeStore)
       </a>
 
       <a
-        v-if="project.demo"
-        :href="project.demo"
+        v-if="project.site"
+        :href="project.site"
         target="_blank"
         rel="noopener noreferrer"
         class="card-footer-item"
-        :aria-label="`Demo: ${project.name}`"
+        :aria-label="`Site: ${project.name}`"
       >
         <span class="icon">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </span>
 
-        <span>Demo</span>
+        <span>Site</span>
       </a>
     </footer>
   </article>
