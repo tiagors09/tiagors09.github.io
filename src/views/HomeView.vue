@@ -1,8 +1,13 @@
 <script setup lang="ts">
+import { watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
 import { RouterLink } from 'vue-router';
 
 const { t } = useI18n()
+
+watchEffect(() => {
+  document.title = `${t('home.name')} | ${t('home.role')}`
+})
 </script>
 
 <template>

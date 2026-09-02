@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import { ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { RouterLink } from 'vue-router'
 
@@ -16,10 +17,15 @@ const { language } = storeToRefs(langStore)
 
 const { toggleTheme } = themeStore
 const { toggleLanguage } = langStore
+const isMenuOpen = ref(false)
 
 const changeLanguage = () => {
   toggleLanguage()
   locale.value = language.value
+}
+
+const closeMenu = () => {
+  isMenuOpen.value = false
 }
 </script>
 
@@ -32,30 +38,49 @@ const changeLanguage = () => {
   >
     <div class="container">
       <div class="navbar-brand">
-        <RouterLink to="/" class="navbar-item">
+        <RouterLink to="/" class="navbar-item" active-class="is-active" @click="closeMenu">
           <strong>Tiago Rodrigues</strong>
         </RouterLink>
       </div>
 
-      <div class="navbar-menu is-active">
+      <button
+        class="navbar-burger"
+        :class="{ 'is-active': isMenuOpen }"
+        type="button"
+        :aria-label="t('nav.menu')"
+        :aria-expanded="isMenuOpen"
+        aria-controls="main-navigation-menu"
+        @click="isMenuOpen = !isMenuOpen"
+      >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
+
+      <div
+        id="main-navigation-menu"
+        class="navbar-menu"
+        :class="{ 'is-active': isMenuOpen }"
+      >
         <div class="navbar-end">
-          <RouterLink to="/" class="navbar-item">
+          <RouterLink to="/" class="navbar-item" active-class="is-active" @click="closeMenu">
             {{ t('nav.home') }}
           </RouterLink>
 
-          <RouterLink to="/about" class="navbar-item">
+          <RouterLink to="/about" class="navbar-item" active-class="is-active" @click="closeMenu">
             {{ t('nav.about') }}
           </RouterLink>
 
-          <RouterLink to="/experience" class="navbar-item">
+          <RouterLink to="/experience" class="navbar-item" active-class="is-active" @click="closeMenu">
             {{ t('nav.experience') }}
           </RouterLink>
 
-          <RouterLink to="/projects" class="navbar-item">
+          <RouterLink to="/projects" class="navbar-item" active-class="is-active" @click="closeMenu">
             {{ t('nav.projects') }}
           </RouterLink>
 
-          <RouterLink to="/contact" class="navbar-item">
+          <RouterLink to="/contact" class="navbar-item" active-class="is-active" @click="closeMenu">
             {{ t('nav.contact') }}
           </RouterLink>
 

@@ -1,5 +1,6 @@
 export default {
   nav: {
+    menu: 'Abrir menu de navegação',
     home: 'Início',
     about: 'Sobre',
     experience: 'Experiência',

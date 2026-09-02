@@ -24,6 +24,13 @@ const { theme } = storeToRefs(themeStore)
         <p class="subtitle is-6 mb-0">
           {{ experience.company }}
         </p>
+
+        <span
+          v-if="experience.current"
+          class="tag is-success is-light mt-2"
+        >
+          {{ currentLabel }}
+        </span>
       </div>
 
       <div class="has-text-right">

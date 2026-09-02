@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
+import { watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import profile from '@/data/profile.json'
@@ -11,6 +12,10 @@ const { t } = useI18n()
 const langStore = useLangStore()
 
 const { language } = storeToRefs(langStore)
+
+watchEffect(() => {
+  document.title = `${t('about.title')} | Tiago Rodrigues`
+})
 </script>
 
 <template>

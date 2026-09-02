@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import ProjectList from '@/components/ProjectList.vue'
@@ -18,6 +18,10 @@ const localizedProjects = computed(() =>
     description: project.description[language.value]
   }))
 )
+
+watchEffect(() => {
+  document.title = `${t('projects.title')} | Tiago Rodrigues`
+})
 
 const syncLanguage = () => {
   locale.value = language.value

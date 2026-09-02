@@ -1,9 +1,14 @@
 <script setup lang="ts">
+import { watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import profile from '@/data/profile.json';
 
 const { t } = useI18n()
+
+watchEffect(() => {
+  document.title = `${t('contact.title')} | Tiago Rodrigues`
+})
 
 </script>
 
@@ -39,8 +44,12 @@ const { t } = useI18n()
           :href="profile.links.github"
           target="_blank"
           rel="noopener noreferrer"
-          class="button"
+          class="button is-dark"
         >
+          <span class="icon" aria-hidden="true">
+            <i class="fa-brands fa-github"></i>
+          </span>
+
           GitHub
         </a>
 
@@ -48,8 +57,12 @@ const { t } = useI18n()
           :href="profile.links.linkedin"
           target="_blank"
           rel="noopener noreferrer"
-          class="button"
+          class="button is-link"
         >
+          <span class="icon" aria-hidden="true">
+            <i class="fa-brands fa-linkedin"></i>
+          </span>
+
           LinkedIn
         </a>
 

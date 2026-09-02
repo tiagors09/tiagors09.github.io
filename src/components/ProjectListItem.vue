@@ -21,6 +21,8 @@ const { theme } = storeToRefs(themeStore)
         <img
           :src="project.image"
           :alt="project.name"
+          loading="lazy"
+          decoding="async"
         />
       </figure>
     </div>
@@ -55,6 +57,7 @@ const { theme } = storeToRefs(themeStore)
         target="_blank"
         rel="noopener noreferrer"
         class="card-footer-item"
+        :aria-label="`GitHub: ${project.name}`"
       >
         <span class="icon">
           <i class="fa-brands fa-github"></i>
@@ -69,6 +72,7 @@ const { theme } = storeToRefs(themeStore)
         target="_blank"
         rel="noopener noreferrer"
         class="card-footer-item"
+        :aria-label="`Demo: ${project.name}`"
       >
         <span class="icon">
           <i class="fa-solid fa-arrow-up-right-from-square"></i>

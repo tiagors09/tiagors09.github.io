@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { computed } from 'vue'
+import { computed, watchEffect } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import ExperienceList from '@/components/ExperienceList.vue'
@@ -19,6 +19,10 @@ const localizedExperiences = computed(() =>
     description: experience.description[language.value]
   }))
 )
+
+watchEffect(() => {
+  document.title = `${t('experience.title')} | Tiago Rodrigues`
+})
 </script>
 
 <template>
