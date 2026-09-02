@@ -3,13 +3,16 @@ name: Build & deploy
 on:
   push:
     branches:
-      - master
+      - main
 
   pull_request:
     branches:
-      - master
+      - main
 
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -66,5 +69,5 @@ jobs:
           git commit -m "Deploy to GitHub Pages"
 
           git push --force \
-            "https://${{ secrets.TOKEN }}@github.com/tiagors09/tiagors09.github.io.git" \
+            "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/tiagors09/tiagors09.github.io.git" \
             gh-pages
