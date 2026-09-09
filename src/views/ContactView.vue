@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { watchEffect } from 'vue';
+import { computed, watchEffect } from 'vue';
 import { useI18n } from 'vue-i18n';
 
 import profile from '@/data/profile.json';
@@ -10,6 +10,11 @@ watchEffect(() => {
   document.title = `${t('contact.title')} | Tiago Rodrigues`
 })
 
+
+const whatsappUrl = computed(() => {
+  const phone = profile.phone.replace(/\D/g, '')
+  return `https://wa.me/55${phone}`
+})
 </script>
 
 <template>
@@ -32,8 +37,14 @@ watchEffect(() => {
           </a>
         </p>
 
-        <p>
-          {{ profile.phone }}
+        <p> 
+          <a :href="whatsappUrl" target="_blank" rel="noopener noreferrer" aria-label="Entrar em contato pelo WhatsApp" > 
+            <span class="icon"> 
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"/> 
+            </span> 
+            
+            {{ profile.phone }} 
+          </a> 
         </p>
 
       </div>
@@ -50,7 +61,9 @@ watchEffect(() => {
             <i class="fa-brands fa-github"></i>
           </span>
 
-          GitHub
+          <span class="ml-1">
+            GitHub
+          </span>
         </a>
 
         <a
@@ -63,7 +76,9 @@ watchEffect(() => {
             <i class="fa-brands fa-linkedin"></i>
           </span>
 
-          LinkedIn
+          <span class="ml-1">
+            LinkedIn
+          </span>
         </a>
 
       </div>
