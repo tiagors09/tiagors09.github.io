@@ -51,6 +51,16 @@ export default {
     email: 'Email'
   },
 
+  pagination: {
+    previous: 'Previous',
+    next: 'Next',
+    first: 'First',
+    last: 'Last',
+    page: 'Page',
+    current: 'Current page',
+    navigation: 'Page navigation'
+  },
+
   actions: {
     downloadCV: 'Download CV',
     github: 'GitHub',
