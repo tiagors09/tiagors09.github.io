@@ -17,6 +17,7 @@ const { language } = storeToRefs(langStore)
 
 const { toggleTheme } = themeStore
 const { toggleLanguage } = langStore
+
 const isMenuOpen = ref(false)
 
 const changeLanguage = () => {
@@ -38,52 +39,91 @@ const closeMenu = () => {
   >
     <div class="container">
       <div class="navbar-brand">
-        <RouterLink to="/" class="navbar-item" active-class="is-active" @click="closeMenu">
+        <!-- Burger -->
+        <button
+          class="navbar-burger"
+          :class="{ 'is-active': isMenuOpen }"
+          type="button"
+          :aria-label="t('nav.menu')"
+          :aria-expanded="isMenuOpen"
+          aria-controls="main-navigation-menu"
+          @click="isMenuOpen = !isMenuOpen"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <!-- Nome -->
+        <RouterLink
+          to="/"
+          class="navbar-item"
+          active-class="is-active"
+          @click="closeMenu"
+        >
           <strong>Tiago Rodrigues</strong>
         </RouterLink>
       </div>
 
-      <button
-        class="navbar-burger"
-        :class="{ 'is-active': isMenuOpen }"
-        type="button"
-        :aria-label="t('nav.menu')"
-        :aria-expanded="isMenuOpen"
-        aria-controls="main-navigation-menu"
-        @click="isMenuOpen = !isMenuOpen"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
-
+      <!-- Menu -->
       <div
         id="main-navigation-menu"
         class="navbar-menu"
         :class="{ 'is-active': isMenuOpen }"
       >
         <div class="navbar-end">
-          <RouterLink to="/" class="navbar-item" active-class="is-active" @click="closeMenu">
+          <!-- Home -->
+          <RouterLink
+            to="/"
+            class="navbar-item"
+            active-class="is-active"
+            @click="closeMenu"
+          >
             {{ t('nav.home') }}
           </RouterLink>
 
-          <RouterLink to="/about" class="navbar-item" active-class="is-active" @click="closeMenu">
+          <!-- About -->
+          <RouterLink
+            to="/about"
+            class="navbar-item"
+            active-class="is-active"
+            @click="closeMenu"
+          >
             {{ t('nav.about') }}
           </RouterLink>
 
-          <RouterLink to="/experience" class="navbar-item" active-class="is-active" @click="closeMenu">
+          <!-- Experience -->
+          <RouterLink
+            to="/experience"
+            class="navbar-item"
+            active-class="is-active"
+            @click="closeMenu"
+          >
             {{ t('nav.experience') }}
           </RouterLink>
 
-          <RouterLink to="/projects" class="navbar-item" active-class="is-active" @click="closeMenu">
+          <!-- Projects -->
+          <RouterLink
+            to="/projects"
+            class="navbar-item"
+            active-class="is-active"
+            @click="closeMenu"
+          >
             {{ t('nav.projects') }}
           </RouterLink>
 
-          <RouterLink to="/contact" class="navbar-item" active-class="is-active" @click="closeMenu">
+          <!-- Contact -->
+          <RouterLink
+            to="/contact"
+            class="navbar-item"
+            active-class="is-active"
+            @click="closeMenu"
+          >
             {{ t('nav.contact') }}
           </RouterLink>
 
+          <!-- Language -->
           <button
             class="button is-ghost navbar-item"
             type="button"
@@ -91,7 +131,10 @@ const closeMenu = () => {
             @click="changeLanguage"
           >
             <span class="icon">
-              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+              <i
+                class="fa-solid fa-globe"
+                aria-hidden="true"
+              ></i>
             </span>
 
             <span>
@@ -99,6 +142,7 @@ const closeMenu = () => {
             </span>
           </button>
 
+          <!-- Theme -->
           <button
             class="button is-ghost navbar-item"
             type="button"
@@ -107,7 +151,11 @@ const closeMenu = () => {
           >
             <span class="icon">
               <i
-                :class="theme === 'dark' ? 'fa-solid fa-sun' : 'fa-solid fa-moon'"
+                :class="
+                  theme === 'dark'
+                    ? 'fa-solid fa-sun'
+                    : 'fa-solid fa-moon'
+                "
                 aria-hidden="true"
               ></i>
             </span>
@@ -117,3 +165,27 @@ const closeMenu = () => {
     </div>
   </nav>
 </template>
+
+<style scoped>
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-burger {
+  margin-left: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 1023px) {
+  .navbar-brand {
+    width: 100%;
+  }
+
+  .navbar-burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+</style>
