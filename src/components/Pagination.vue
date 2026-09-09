@@ -66,7 +66,6 @@ const pageItems = computed<PageItem[]>(() => {
     return []
   }
 
-  // Poucas páginas: mostra todas
   if (total <= max) {
     return Array.from({ length: total }, (_, index) => ({
       type: 'page' as const,
@@ -76,16 +75,11 @@ const pageItems = computed<PageItem[]>(() => {
 
   const items: PageItem[] = []
 
-  // Sempre mostra a primeira página
   items.push({
     type: 'page',
     page: 1
   })
 
-  /*
-   * Define quantas páginas podem aparecer
-   * ao redor da página atual.
-   */
   const siblingCount = Math.max(
     1,
     Math.floor((max - 3) / 2)
@@ -101,7 +95,6 @@ const pageItems = computed<PageItem[]>(() => {
     current + siblingCount
   )
 
-  // Reticências depois da primeira página
   if (startPage > 2) {
     items.push({
       type: 'ellipsis',
@@ -109,7 +102,6 @@ const pageItems = computed<PageItem[]>(() => {
     })
   }
 
-  // Páginas intermediárias
   for (
     let page = startPage;
     page <= endPage;
@@ -121,7 +113,6 @@ const pageItems = computed<PageItem[]>(() => {
     })
   }
 
-  // Reticências antes da última página
   if (endPage < total - 1) {
     items.push({
       type: 'ellipsis',
@@ -129,7 +120,6 @@ const pageItems = computed<PageItem[]>(() => {
     })
   }
 
-  // Sempre mostra a última página
   items.push({
     type: 'page',
     page: total
@@ -165,7 +155,6 @@ function isPageItem(
     class="pagination-wrapper"
     :aria-label="t('pagination.navigation')"
   >
-    <!-- Controles anteriores -->
     <div class="pagination-controls pagination-controls-left">
       <button
         type="button"
@@ -206,7 +195,6 @@ function isPageItem(
       </button>
     </div>
 
-    <!-- Páginas -->
     <ul class="pagination-list">
       <li
         v-for="(pageItem, index) in pageItems"
@@ -245,7 +233,6 @@ function isPageItem(
       </li>
     </ul>
 
-    <!-- Controles seguintes -->
     <div class="pagination-controls pagination-controls-right">
       <button
         type="button"
@@ -299,7 +286,6 @@ function isPageItem(
   margin-top: 2rem;
 }
 
-/* Controles da esquerda */
 .pagination-controls-left {
   grid-area: left;
   display: flex;
@@ -308,26 +294,6 @@ function isPageItem(
   gap: 0.5rem;
 }
 
-/* Lista de páginas */
-.pagination-list {
-  grid-area: pages;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  gap: 0.35rem;
-  margin: 0;
-  padding: 0;
-
-  /*
-   * Impede o Bulma de alterar a posição
-   * da lista dentro do nosso grid.
-   */
-  order: unset;
-}
-
-/* Controles da direita */
 .pagination-controls-right {
   grid-area: right;
   display: flex;
@@ -336,14 +302,102 @@ function isPageItem(
   gap: 0.5rem;
 }
 
+.pagination-list {
+  grid-area: pages;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  order: unset;
+}
+
 .pagination-link,
 .pagination-button {
   min-width: 2.5rem;
   min-height: 2.5rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
 }
 
 .pagination-link {
   margin: 0;
+  padding: 0.5rem 0.75rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  color: #363636;
+
+  cursor: pointer;
+}
+
+.pagination-link:hover:not(.is-current) {
+  background-color: #f5f5f5;
+  border-color: #b5b5b5;
+  color: #363636;
+}
+
+.pagination-link.is-current {
+  background-color: #485fc7;
+  border-color: #485fc7;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: default;
+}
+
+.pagination-link:focus-visible,
+.pagination-button:focus-visible {
+  outline: 2px solid #485fc7;
+  outline-offset: 2px;
+}
+
+.pagination-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+
+  padding: 0.5rem 0.75rem;
+
+  border: 1px solid #dbdbdb;
+  background-color: #ffffff;
+  color: #363636;
+
+  cursor: pointer;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #f5f5f5;
+  border-color: #b5b5b5;
+  color: #363636;
+}
+
+.pagination-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  background-color: #f5f5f5;
+  border-color: #e5e5e5;
+  color: #7a7a7a;
+}
+
+.pagination-button .icon {
+  margin: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-ellipsis {
@@ -353,17 +407,43 @@ function isPageItem(
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
+  color: #7a7a7a;
+  user-select: none;
 }
 
-/* Botões */
-.pagination-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.35rem;
+@media (prefers-color-scheme: dark) {
+  .pagination-link,
+  .pagination-button {
+    border-color: #4a4a4a;
+    background-color: #242424;
+    color: #f5f5f5;
+  }
+
+  .pagination-link:hover:not(.is-current),
+  .pagination-button:hover:not(:disabled) {
+    background-color: #363636;
+    border-color: #5a5a5a;
+    color: #ffffff;
+  }
+
+  .pagination-link.is-current {
+    background-color: #485fc7;
+    border-color: #485fc7;
+    color: #ffffff;
+  }
+
+  .pagination-button:disabled {
+    background-color: #303030;
+    border-color: #404040;
+    color: #888888;
+  }
+
+  .pagination-ellipsis {
+    color: #a0a0a0;
+  }
 }
 
-/* Mobile */
 @media screen and (max-width: 768px) {
   .pagination-wrapper {
     grid-template-columns: auto 1fr auto;
@@ -379,6 +459,7 @@ function isPageItem(
   .pagination-list {
     gap: 0.15rem;
     flex-wrap: nowrap;
+    min-width: 0;
   }
 
   .pagination-link,
@@ -386,6 +467,10 @@ function isPageItem(
   .pagination-ellipsis {
     min-width: 2.25rem;
     min-height: 2.25rem;
+  }
+
+  .pagination-link {
+    padding: 0.4rem 0.5rem;
   }
 
   .pagination-button {
@@ -399,6 +484,28 @@ function isPageItem(
 
   .pagination-button .icon {
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pagination-wrapper {
+    gap: 0.25rem;
+  }
+
+  .pagination-list {
+    gap: 0.1rem;
+  }
+
+  .pagination-link,
+  .pagination-ellipsis {
+    min-width: 2rem;
+    min-height: 2rem;
+  }
+
+  .pagination-button {
+    width: 2.25rem;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
   }
 }
 </style>
