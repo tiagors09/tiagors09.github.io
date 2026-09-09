@@ -319,7 +319,7 @@ function isPageItem(
   min-width: 2.5rem;
   min-height: 2.5rem;
   box-sizing: border-box;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 
   transition:
     background-color 0.15s ease,
